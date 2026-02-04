@@ -8,4 +8,8 @@ Checked what would happen with erroneous inputs or wrong types/form and realised
 
 Corrected this by searching online for how to check if inputs were inputed correctly and implemented this error handling. Then got confused about the cin.clear() and cin.ignore and had to research the purpose of these.
 
-Finally, added a readMe.md
+Added a readMe.md
+
+Realised the markscheme wants seperate functions so added a seperate function.
+
+Thinking of adding an error handling service to clean up main.
