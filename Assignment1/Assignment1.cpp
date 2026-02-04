@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <string>
+#include <limits>
 int main()
 {
     std::string cont{"y"};
@@ -8,8 +9,9 @@ int main()
     {
         int z, n_i, n_f;
         std::string unit;
-        std::cout << "Seperated by a space: enter atomic number (Z), initial energy level (n_i), final energy level (n_f), and unit (J/e): ";
-        std::cin >> z >> n_i >> n_f >> unit;
+        std::cout << "Separated by a space/new line: enter atomic number (Z), initial energy level (n_i), final energy level (n_f), and unit (J/e): ";
+        if (std::cin >> z >> n_i >> n_f >> unit)
+        {
         if (n_i< n_f)
         {
             std::cout << "n_i must be greater than n_f" << std::endl;
@@ -32,7 +34,14 @@ int main()
             std::cout << "Invalid unit" << std::endl;
         } 
         }
-        std::cout << "Continue? (y/n): " << std::endl;
+    }
+    else
+    {
+        std::cout << "Wrong input type/format" << std::endl;
+        std::cin.clear();
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    }
+        std::cout << "Continue/Retry? (y/n): " << std::endl;
         std::cin >> cont;
     }
     return 0;
