@@ -13,10 +13,9 @@ double BohrEnergy()
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         throw std::invalid_argument("Wrong data type(s) used");
     }
-    if (n_i < n_f)
+    if (n_i <= 0 || n_f <= 0 || n_i < n_f)
     {
-        throw std::invalid_argument("n_i should be greater than n_f");
-        
+        throw std::invalid_argument("n_i and n_f should be positive integers > 0 where n_i should be greater than n_f");
     }
     double delta_E{13.6 * z * z * (1.0 / (n_f * n_f) - 1.0 / (n_i * n_i))};
     if (unit == "J")
@@ -38,8 +37,7 @@ int main()
     std::string cont{"y"};
     while (cont == "y")
     {
-        
-        
+
         try
         {
             std::cout << BohrEnergy() << std::endl;

@@ -12,4 +12,4 @@ Added a readMe.md
 
 Realised the markscheme wants seperate functions so added a seperate function.
 
-Added error handling in the energy calculation function and cleaned up the main function - reducing code into just a try catch block found on https://www.geeksforgeeks.org/cpp/how-to-throw-an-exception-in-cpp/. 
+Added error handling in the energy calculation function and cleaned up the main function - reducing code into just a try catch block found on https://www.geeksforgeeks.org/cpp/how-to-throw-an-exception-in-cpp/.
