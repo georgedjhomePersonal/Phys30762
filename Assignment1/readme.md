@@ -1,3 +1,5 @@
+Thought process in steps:
+
 Started by defining a functiion with just a for loop.
 
 Figured out how to pass multiple inputs at once and how to use strings.
@@ -13,3 +15,5 @@ Added a readMe.md
 Realised the markscheme wants seperate functions so added a seperate function.
 
 Added error handling in the energy calculation function and cleaned up the main function - reducing code into just a try catch block found on https://www.geeksforgeeks.org/cpp/how-to-throw-an-exception-in-cpp/.
+
+Added 3 lines of comments from intellisense and changed block style to make it look nicer
